@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shalini Jaiswal - Developer Portfolio , Web developer , Programmer </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* body and * is globally classes  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0,0,33);
+            color: white;
+            font-family: "Zilla Slab", serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 134, 223);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: blueviolet;
+            height: 1.4px;
+            margin: 40px 40px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstSection>div {
+            /* > means only firstSection take 20% */
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+            /* margin: 30px 0; */
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: black;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+            /* font-size: 20px; */
+            cursor: pointer;
+        }
+
+        /* for the utility class -- for put the all the things in organized manner*/
+        .purple {
+            color: rgb(159, 75, 238);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(159, 75, 238);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            /* width: 90%; */
+            width: 80vw;
+            height: 2px;
+            margin: 70px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 75px;
+            width: 2px;
+            background-color: white;
+            margin: 0 180px 0 0;
+        }
+
+        .image-top {
+            width: 53px;
+            position: relative;
+            top: -29px;
+            left: -9px;
+        }
+
+        .vertical-tittle {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            /* font-size: 20px; */
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 80px;
+            color: gray;
+            width: 100px;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            /* height: 223px; */
+        }
+
+        .footer {
+            display: flex;
+            /* padding: 23px 122px; */
+            margin: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-right {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Shalini Jaiswal Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact Us</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection"> Hi, I am <span class="purple">Shalini Jaiswal</span>
+                <div>And I am a Web Developer</div>
+                <!-- it is also by using typed js  -->
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> What I doing </span>
+            <h1>Experience With</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="develop.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal i'm a fronted development and basic skill bout the backend develop. I work with the HTMl,CSS and javascrit.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <div class="vertical">
+                        <img class="image-top" src="hr.png" alt="">
+                        <div class="vertical-tittle">
+                            HTML Developer
+                        </div>
+                        <!-- <div>
+                            (2024-2025)
+                        </div> -->
+                        <div class="vertical-desc">
+                            Hello, I am Shalini Jaiswal and i practice the code on hackerrank like C,C++ or other programming language and making the project on it also related to developer.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="git.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal and i have a repositiory on GitHub.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="ldin.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal i have a an acount on linkdin for finding the job releted to our choice field.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="duolingo.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal nice to meet to all i am very glad to thanks you all see my
+                        Portfolio which i maked by own sef
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="leetcode.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal and i practice the code on leetcode like C,C++ or other programming language their is more problem that we can solve.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="developing.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Hello, I am Shalini Jaiswal nice to meet to all i am very glad to thanks you all see my
+                        Portfolio which i maked by own sef
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    
+
+        <div class="footer-right">
+            copyright &#169 www.shaliniportfolio.com | All rights reserved
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Programmer', 'Machine Learning', 'Team Leader'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
